@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  // while循环 先判断 在执行 如果条件最开始就是假 那么循环压根不执行
+
+  // do while 不管条件为真还是假 先执行一次循环体 然后在判断条件
+
+  //  while (false) {
+  //    console.log(1);
+  //  }
+
+  //  do {
+  //    console.log(1);
+  //  } while (false)
+
+
+  // 使用do-while循环：输出询问“我爱你，嫁给我吧？”，如果输入为“嫁”则打印”我们形影不离“，若输入为“不嫁”,则继续询问
+
+  //  只有输入不嫁的时候 这个程序会一直继续问
+  //  do {
+  //    var result = prompt('我爱你，嫁给我吧？');
+  //  } while (result == '不嫁')
+
+  // 输入的结果不是嫁的情况下  这个程序会一直问
+  //  do {
+  //      var result = prompt('我爱你，嫁给我吧？');
+  //    } while (result != '嫁')
+  //  alert('我们形影不离');
+
+
+  // 让用户输入用户名和密码，只有当用户名=admin并且用户密码=123456的时候才提示登录成功，否则一直弹框
+
+  do {
+    var userName = prompt('请输入用户名');
+    var password = prompt('请输入密码');
+  } while (!(userName == 'admin' && password == '123456'))
+
+  alert('登录成功');
+
+
+
+</script>
+</body>
+</html>

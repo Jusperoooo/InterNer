@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  // 需求：得到用户输入的年纪  判断这个年纪  如果这个年纪大于等于18岁 就可以去网吧了 如果小于18岁 好好学习
+
+  // if (条件) {
+  //  当条件为true的时候 执行的代码块
+  // } else {
+  //  当条件为false的时候 执行的代码块
+  // }
+
+  //  var age = 19;
+  //
+  //  if (age >= 18) {
+  //    console.log('网吧  我来了！！');
+  //  } else {
+  //    console.log('好好学习 上什么网');
+  //  }
+
+
+  //   var age = prompt('请输入你的房龄');
+  //
+  //   if (age >= 18) {
+  //     console.log('你已经长大了，是该找对象了 你看看我怎么样');
+  //   } else {
+  //     console.log('小屁孩，赶紧回家看小猪佩奇去吧');
+  //   }
+
+  // 需求升级：0 - 17 好好读书  18-28 找对象  29-40 结婚  41 - 60 为人父为人母  60 退休
+
+  // if (条件1) {
+  // 条件1为true的时候执行
+  // } else if (条件2) {
+  //  条件1为false并且条件2为true的的时候执行
+  // } else if (条件3) {
+  //   上述条件都不满足 同时条件3为true的时候执行
+  // }.. else {
+  //   上述条件都不满足 执行的代码块
+  // }
+
+
+  var age = prompt('输入你的年纪，查询你该做的事情');
+
+  if (age <= 17) {
+    console.log('好好读书');
+  } else if (age >= 18 && age <= 28) {
+    console.log('你该找对象了');
+  } else if (age >= 29 && age <= 40) {
+    console.log('你该结婚了');
+  } else if (age >= 41 && age <= 60) {
+    console.log('为人父为人母');
+  } else if (age >= 61) {
+    console.log('颐养天年');
+  } else {
+    console.log('好好输入年纪 别输入有的没的')
+  }
+
+</script>
+</body>
+</html>

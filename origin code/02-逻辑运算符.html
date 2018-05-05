@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // 逻辑运算符  与 或 非
+  // 与 &&  可以理解为并且  两个条件必须同时满足  一个不满足整个表达式不成立
+  // 或 ||  两个条件只需要满足一个即可
+  // 非  取反  !true  !false
+
+  //  console.log(true && true);  // true
+  //  console.log(false && true);  // false
+  //  console.log(true && false);  // false
+  //  console.log(false && false);  // false
+
+  //  console.log(true || true);  //true
+  //  console.log(true || false);  //true
+  //  console.log(false || true);  //true
+  //  console.log(false || false);  //false
+
+  console.log(!false);
+  console.log(!true);
+
+
+  // 短路运算原则 (逻辑中断)
+  // 短路与：只要前面的值是false 后面的压根就不会解析 整个表达式就是第一个的值
+  // console.log(哈哈);
+  // console.log(false && 哈哈);
+  // console.log(true && 哈哈)
+
+  // 短路或：只要前面的值是true  后面的压根就不会解析 整个表达式就是第一个的值
+  // console.log(true || 嘻嘻);
+  // console.log(false || 嘻嘻);
+
+  //  console.log(1 || 2);
+  //  console.log(1 && 2); // 2
+
+  console.log(false && 5);  //false
+  console.log(true && 5);  //5
+  console.log(true && '哈哈');  //'哈哈'
+  console.log(0 && 5); // 0
+</script>
+
+</body>
+</html>

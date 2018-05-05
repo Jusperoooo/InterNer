@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  // > < >=  <= == === != !==
+  // 比较运算符返回的结果都是布尔值
+
+  // == 比较的是内容  === 全等  不仅仅不叫内容 还比较类型
+  // != 不等于 !== 不全等于
+  //  console.log(5 > 4);  //true
+  //  console.log(5 < 4);  //false
+  //  console.log(5 <= 5); // true
+  //  console.log(5 >= 5); // true
+  //
+  //  // console.log(5 = 5);
+  //  console.log(5 == 5);  // true
+  //
+  //  console.log(5 == '5');  //true
+  //  console.log(5 === '5');  //false
+  //
+  //  console.log(5 != '5');  // false
+  //  console.log(5 !== '5');  //true
+
+
+  // 如果是数字和字符串的数字比较 则字符串数字会自动转换成数字去比较
+  console.log(9 > '10');  // false
+  // 如果是字符串和字符串比较 则会每一个字符的ASCII码去进行比较
+  console.log('a' > 'b');  // false
+  console.log('aaa' > 'aab');  // false
+  console.log('9' > '1000000000'); // true
+  // 涉及到NAN都是false （NaN）
+  console.log(NaN == NaN);  // false
+  // 如果是布尔值参与比较 布尔值会转换成数字0(false)和1(true)
+  console.log(1 > false);
+  console.log(true > 0);
+
+</script>
+</body>
+</html>
